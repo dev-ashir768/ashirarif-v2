@@ -66,75 +66,115 @@ export const education = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "The IFFC Show 2026",
     description:
       "A full-featured e-commerce platform with stripe integration, admin dashboard, and real-time inventory management.",
-    image: "/project1.jpg",
+    image: "/projects-images/iffc2026.theiffshow.png",
     tags: ["Next.js", "Stripe", "MongoDB"],
-    link: "#",
+    link: "https://iffc2026.theiffshow.com",
   },
   {
-    title: "Task Management App",
-    description:
-      "A productivity tool with team collaboration features, real-time updates using Socket.io, and drag-and-drop interface.",
-    image: "/project2.jpg",
-    tags: ["React", "Node.js", "Socket.io"],
-    link: "#",
-  },
-  {
-    title: "Social Media Dashboard",
+    title: "Travel Arrangers",
     description:
       "Analytics dashboard for social media management, featuring data visualization with Recharts and automated reporting.",
-    image: "/project3.jpg",
+    image: "/projects-images/travel-arrangers.vercel.png",
     tags: ["Next.js", "Recharts", "PostgreSQL"],
-    link: "#",
+    link: "https://travel-arrangers.vercel.app",
   },
   {
-    title: "AI Content Generator",
+    title: "EcoVolt Generators",
     description:
       "SaaS application that uses OpenAI API to generate marketing copy and blog posts with a intuitive editor.",
-    image: "/project4.jpg",
+    image: "/projects-images/ecovoltgenerators.png",
     tags: ["Next.js", "OpenAI", "Tailwind"],
-    link: "#",
+    link: "https://ecovoltgenerators.com",
   },
   {
-    title: "Real Estate Portal",
+    title: "The IFFC Show",
     description:
       "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
-    image: "/project5.jpg",
+    image: "/projects-images/theiffshow.png",
     tags: ["React", "Firebase", "Google Maps"],
-    link: "#",
+    link: "https://theiffshow.com",
   },
   {
-    title: "Fitness Tracker",
+    title: "Aussie Steel Beams",
     description:
-      "Mobile-first web app for tracking workouts, nutrition, and progress with visualized charts.",
-    image: "/project6.jpg",
-    tags: ["PWA", "React", "Chart.js"],
-    link: "#",
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/aussiesteelbeams.com.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://aussiesteelbeams.com.au",
   },
   {
-    title: "Crypto Portfolio",
+    title: "Bristol Eateries",
     description:
-      "Real-time cryptocurrency tracker with price alerts, portfolio management, and market news integration.",
-    image: "/project7.jpg",
-    tags: ["Next.js", "CoinGecko API", "Zustand"],
-    link: "#",
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/bristol-eateries.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://bristol-eateries.vercel.app",
   },
   {
-    title: "Learning Management System",
+    title: "Background Checker",
     description:
-      "Platform for online courses with video streaming, quizzes, and progress tracking for students.",
-    image: "/project8.jpg",
-    tags: ["MERN", "AWS S3", "Redux"],
-    link: "#",
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/background-checker.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://background-checker.vercel.app",
   },
   {
-    title: "Chat Application",
+    title: "Dr. Nishant Agarwala",
     description:
-      "Real-time messaging app with group chats, file sharing, and end-to-end encryption features.",
-    image: "/project9.jpg",
-    tags: ["Socket.io", "React", "Express"],
-    link: "#",
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/drnishantagarwala.com.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://drnishantagarwala.com",
+  },
+  {
+    title: "Codezy",
+    description:
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/codezy.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://codezy.vercel.app",
+  },
+  {
+    title: "Han Zak",
+    description:
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/han-zak.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://han-zak.vercel.app",
+  },
+  {
+    title: "Mak Alhadaf",
+    description:
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/mak-alhadaf.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://mak-alhadaf.vercel.app",
+  },
+  {
+    title: "EyeWiz",
+    description:
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/eyewiz.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://eyewiz.vercel.app",
+  },
+   {
+    title: "Ikigai",
+    description:
+      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+    image: "/projects-images/ikigai-test.vercel.png",
+    tags: ["React", "Firebase", "Google Maps"],
+    link: "https://ikigai-test.vercel.app",
+  },
+   {
+    title: "Q by Aleksandra Baranova",
+    description:
+      "A productivity tool with team collaboration features, real-time updates using Socket.io, and drag-and-drop interface.",
+    image: "/projects-images/qbyab.png",
+    tags: ["React", "Node.js", "Socket.io"],
+    link: "https://qbyab.com",
   },
 ];

@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/smooth-scroll";
+import { QueryProvider } from "@/components/query-provider";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -45,13 +46,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SmoothScroll>
-            <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </div>
-          </SmoothScroll>
+          <QueryProvider>
+            <SmoothScroll>
+              <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
+                <Header />
+                <main className="flex-1">{children}</main>
+                <Footer />
+              </div>
+            </SmoothScroll>
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>

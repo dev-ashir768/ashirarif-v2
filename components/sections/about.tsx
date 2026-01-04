@@ -42,17 +42,17 @@ export function About() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
         >
-          <div className="space-y-4 mt-8">
-            <Card className="glass-card p-6 transform hover:-translate-y-2 transition-transform">
+          <div className="space-y-4 sm:mt-8">
+            <Card className="glass-card p-4 md:p-6 transform hover:-translate-y-2 transition-transform">
               <Cpu className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-bold mb-2">Performance</h3>
               <p className="text-sm text-muted-foreground">
                 Optimized for speed and efficiency.
               </p>
             </Card>
-            <Card className="glass-card p-6 bg-primary/10 border-primary/20 transform hover:-translate-y-2 transition-transform">
+            <Card className="glass-card p-4 md:p-6 bg-primary/10 border-primary/20 transform hover:-translate-y-2 transition-transform">
               <Globe className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-bold mb-2">Scalability</h3>
               <p className="text-sm text-muted-foreground">
@@ -61,14 +61,14 @@ export function About() {
             </Card>
           </div>
           <div className="space-y-4">
-            <Card className="glass-card p-6 bg-linear-to-br from-primary/20 to-transparent border-primary/20 transform hover:-translate-y-2 transition-transform">
+            <Card className="glass-card p-4 md:p-6 bg-linear-to-br from-primary/20 to-transparent border-primary/20 transform hover:-translate-y-2 transition-transform">
               <Code2 className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-bold mb-2">Clean Code</h3>
               <p className="text-sm text-muted-foreground">
                 Maintainable and readable architecture.
               </p>
             </Card>
-            <Card className="glass-card p-6 transform hover:-translate-y-2 transition-transform">
+            <Card className="glass-card p-4 md:p-6 transform hover:-translate-y-2 transition-transform">
               <Zap className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-bold mb-2">Modern UI</h3>
               <p className="text-sm text-muted-foreground">

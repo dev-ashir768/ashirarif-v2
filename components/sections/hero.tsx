@@ -38,12 +38,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-8"
+          className="font-heading text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-6 md:mb-8"
         >
           <span className="block text-transparent bg-clip-text bg-linear-to-b from-foreground to-foreground/50">
             {personalData.name}
           </span>
-          <span className="block text-2xl sm:text-4xl md:text-5xl font-light text-muted-foreground mt-4">
+          <span className="block text-xl sm:text-4xl md:text-5xl font-light text-muted-foreground mt-2 md:mt-4">
             {personalData.role}
           </span>
         </motion.h1>
@@ -52,7 +52,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="max-w-2xl text-lg sm:text-xl text-muted-foreground mb-12 leading-relaxed"
+          className="max-w-2xl text-base sm:text-xl text-muted-foreground mb-8 md:mb-12 leading-relaxed"
         >
           {personalData.heroHeadline}
         </motion.p>

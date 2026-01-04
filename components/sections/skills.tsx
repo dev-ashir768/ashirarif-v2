@@ -72,7 +72,7 @@ export function Skills() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
         {skillData.map((skill, index) => (
           <motion.div
             key={index}
@@ -80,7 +80,7 @@ export function Skills() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
             viewport={{ once: true }}
-            className="group relative h-36 rounded-2xl glass-card flex flex-col items-center justify-center gap-4 overflow-hidden"
+            className="group relative h-28 md:h-36 rounded-2xl glass-card flex flex-col items-center justify-center gap-3 md:gap-4 overflow-hidden"
           >
             {/* Hover Glow Effect matching brand color */}
             <div

@@ -82,13 +82,13 @@ export function Contact() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-heading text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                <h2 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
                   Let's build <br />
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-purple-400 to-pink-400 animate-gradient-x bg-size-[200%_auto]">
                     something epic.
                   </span>
                 </h2>
-                <p className="text-xl text-muted-foreground mb-12 max-w-lg leading-relaxed">
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 md:mb-12 max-w-lg leading-relaxed">
                   I'm currently available for freelance projects and remote
                   teams. Let's discuss your next big idea.
                 </p>

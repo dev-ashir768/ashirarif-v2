@@ -91,7 +91,7 @@ export function Header() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="glass rounded-full px-8 py-5 flex items-center justify-between pointer-events-auto w-full md:w-auto md:min-w-[500px] gap-12"
+          className="glass rounded-full px-6 md:px-8 py-4 md:py-5 flex items-center justify-between pointer-events-auto w-full md:w-auto md:min-w-[500px] gap-4 md:gap-12"
         >
           <Link
             href="/"

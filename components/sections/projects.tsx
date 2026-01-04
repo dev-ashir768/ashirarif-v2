@@ -38,7 +38,7 @@ export function Projects() {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
         >
-          <div>
+          <div className="flex-1">
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
               Selected <span className="text-primary">Work</span>
             </h2>

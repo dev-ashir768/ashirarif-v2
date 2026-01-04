@@ -32,12 +32,12 @@ export function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
-            className={`relative flex flex-col md:flex-row gap-8 mb-12 ${
+            className={`relative flex flex-col md:flex-row gap-4 md:gap-8 mb-12 ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >
             {/* Center Dot */}
-            <div className="absolute left-0 top-6 w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 transform md:left-1/2 md:translate-x-[-5.5px] translate-x-[10.5px] z-10" />
+            <div className="absolute left-4 md:left-1/2 top-6 w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 transform md:-translate-x-1/2 translate-x-[-50%] z-10" />
 
             {/* Content */}
             <div className="ml-12 md:ml-0 w-full md:w-1/2">

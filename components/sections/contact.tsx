@@ -63,13 +63,13 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-32 px-4 md:px-6 overflow-hidden"
+      className="relative py-16 md:py-32 px-4 md:px-6 overflow-hidden"
     >
       {/* Background Blobs */}
       <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-primary/10 blur-[130px] rounded-full mix-blend-screen pointer-events-none -z-10" />
 
       <div className="container relative z-10 max-w-6xl mx-auto">
-        <div className="glass-card rounded-[3rem] p-8 md:p-16 border border-black/5 dark:border-white/5 relative overflow-hidden">
+        <div className="glass-card rounded-4xl md:rounded-[3rem] p-6 md:p-16 border border-black/5 dark:border-white/10 relative overflow-hidden">
           {/* Glossy Overlay */}
           <div className="absolute inset-0 bg-linear-to-b from-black/5 dark:from-white/5 to-transparent pointer-events-none" />
 
@@ -82,7 +82,7 @@ export function Contact() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
+                <h2 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
                   Let's build <br />
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-purple-400 to-pink-400 animate-gradient-x bg-size-[200%_auto]">
                     something epic.
@@ -107,13 +107,13 @@ export function Contact() {
                     <div className="flex flex-col gap-1">
                       <a
                         href={`mailto:${personalData.email}`}
-                        className="text-lg md:text-xl font-medium hover:text-primary transition-colors truncate"
+                        className="text-base md:text-xl font-medium hover:text-primary transition-colors break-all md:truncate"
                       >
                         {personalData.email}
                       </a>
                       <a
                         href={`mailto:${personalData.secondaryEmail}`}
-                        className="text-base md:text-lg font-medium text-muted-foreground hover:text-primary transition-colors truncate"
+                        className="text-sm md:text-lg font-medium text-muted-foreground hover:text-primary transition-colors break-all md:truncate"
                       >
                         {personalData.secondaryEmail}
                       </a>

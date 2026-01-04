@@ -18,7 +18,7 @@ import { personalData } from "@/lib/data";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-20 md:pt-32">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-10 md:pt-32">
       {/* Optimized Background Glows */}
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 blur-[80px] rounded-full mix-blend-screen animate-blob opacity-50 pointer-events-none will-change-transform" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-purple-500/15 blur-[80px] rounded-full mix-blend-screen animate-blob animation-delay-2000 opacity-50 pointer-events-none will-change-transform" />
@@ -38,7 +38,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-heading text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-6 md:mb-8"
+          className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-6 md:mb-8"
         >
           <span className="block text-transparent bg-clip-text bg-linear-to-b from-foreground to-foreground/50">
             {personalData.name}

@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Globe, Laptop, Cpu, Zap, Database } from "lucide-react";
+import { Code2, Globe, Cpu, Zap } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { personalData } from "@/lib/data";
 
 export function About() {
@@ -26,12 +26,12 @@ export function About() {
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>{personalData.about}</p>
             <p>
-              I don't just write code; I engineer solutions. My philosophy
+              I don&apos;t just write code; I engineer solutions. My philosophy
               revolves around creating interfaces that feel natural and backends
               that are invisible yet powerful.
             </p>
             <p className="border-l-4 border-primary pl-6 italic text-foreground">
-              "Great software is a combination of logic, art, and empathy."
+              &quot;Great software is a combination of logic, art, and empathy.&quot;
             </p>
           </div>
         </motion.div>

@@ -7,9 +7,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Code,
-  Sparkles,
-  Box,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -69,7 +66,7 @@ export function Hero() {
             className="rounded-full h-12 px-8 text-base bg-primary hover:bg-primary/90 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(79,70,229,0.3)]"
           >
             <Link href="#contact">
-              Let's Talk <ArrowRight className="ml-2 h-4 w-4" />
+              Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
           <Button

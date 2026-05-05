@@ -53,7 +53,7 @@ export function Contact() {
       setSuccess(true);
       reset();
       setTimeout(() => setSuccess(false), 5000);
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -83,14 +83,14 @@ export function Contact() {
                 viewport={{ once: true }}
               >
                 <h2 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
-                  Let's build <br />
+                  Let&apos;s build <br />
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-purple-400 to-pink-400 animate-gradient-x bg-size-[200%_auto]">
                     something epic.
                   </span>
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 md:mb-12 max-w-lg leading-relaxed">
-                  I'm currently available for freelance projects and remote
-                  teams. Let's discuss your next big idea.
+                  I&apos;m currently available for freelance projects and remote
+                  teams. Let&apos;s discuss your next big idea.
                 </p>
               </motion.div>
 
@@ -182,7 +182,7 @@ export function Contact() {
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
                 <div className="space-y-2">
                   <Label className="text-sm font-bold uppercase tracking-wider text-muted-foreground ml-1">
-                    What's your name?
+                    What&apos;s your name?
                   </Label>
                   <Input
                     placeholder="John Doe"

@@ -13,7 +13,7 @@ import {
   SiFirebase,
   SiExpress,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiBun,
   SiReactquery,
   SiGooglechrome,
@@ -49,7 +49,7 @@ const skillData = [
 
   // Foundation & Others
   { name: "HTML", icon: SiHtml5, color: "#E34F26" },
-  { name: "CSS", icon: SiCss3, color: "#1572B6" },
+  { name: "CSS", icon: SiCss, color: "#1572B6" },
   { name: "jQuery", icon: SiJquery, color: "#0769AD" },
   { name: "Chrome Ext", icon: SiGooglechrome, color: "#4285F4" },
 ];

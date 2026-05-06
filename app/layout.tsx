@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { QueryProvider } from "@/components/query-provider";
+import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -37,7 +38,7 @@ export default function RootLayout({
         className={cn(
           outfit.variable,
           jakarta.variable,
-          "font-body antialiased"
+          "font-body antialiased",
         )}
       >
         <ThemeProvider
@@ -48,6 +49,12 @@ export default function RootLayout({
         >
           <QueryProvider>
             <SmoothScroll>
+              <Script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7464685771078160"
+                crossOrigin="anonymous"
+                strategy="afterInteractive"
+              />
               <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
                 <Header />
                 <main className="flex-1">{children}</main>

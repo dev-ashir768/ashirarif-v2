@@ -34,6 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7464685771078160"
+        crossOrigin="anonymous"
+        strategy="beforeInteractive"
+      />
       <body
         className={cn(
           outfit.variable,
@@ -49,12 +55,6 @@ export default function RootLayout({
         >
           <QueryProvider>
             <SmoothScroll>
-              <Script
-                async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7464685771078160"
-                crossOrigin="anonymous"
-                strategy="afterInteractive"
-              />
               <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
                 <Header />
                 <main className="flex-1">{children}</main>

@@ -83,14 +83,14 @@ export const projects = [
     tags: ["Next.js", "Recharts", "PostgreSQL"],
     link: "https://travel-arrangers.vercel.app",
   },
-  {
-    title: "EcoVolt Generators",
-    description:
-      "SaaS application that uses OpenAI API to generate marketing copy and blog posts with a intuitive editor.",
-    image: "/projects-images/ecovoltgenerators.png",
-    tags: ["Next.js", "OpenAI", "Tailwind"],
-    link: "https://ecovoltgenerators.com",
-  },
+  // {
+  //   title: "EcoVolt Generators",
+  //   description:
+  //     "SaaS application that uses OpenAI API to generate marketing copy and blog posts with a intuitive editor.",
+  //   image: "/projects-images/ecovoltgenerators.png",
+  //   tags: ["Next.js", "OpenAI", "Tailwind"],
+  //   link: "https://ecovoltgenerators.com",
+  // },
   {
     title: "The IFFC Show",
     description:

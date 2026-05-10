@@ -11,7 +11,7 @@ const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-10 md:pt-24">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-16 md:pt-24">
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 blur-[80px] rounded-full mix-blend-screen animate-blob opacity-50 pointer-events-none will-change-transform" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-purple-500/15 blur-[80px] rounded-full mix-blend-screen animate-blob animation-delay-2000 opacity-50 pointer-events-none will-change-transform" />
 

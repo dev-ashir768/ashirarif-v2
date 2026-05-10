@@ -7,7 +7,6 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { QueryProvider } from "@/components/query-provider";
-import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -21,10 +20,127 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const siteUrl = "https://ashirarif.com";
+const siteTitle = "Ashir Arif | MERN Stack Developer";
+const siteDescription =
+  "Ashir Arif is a MERN Stack Developer specializing in Next.js, React, Node.js, MongoDB and TypeScript. Building fast, scalable, and premium web applications.";
+
 export const metadata: Metadata = {
-  title: "Ashir Arif | MERN Stack Developer",
-  description:
-    "Portfolio of Ashir Arif, a skilled MERN Stack Developer building premium digital experiences.",
+  metadataBase: new URL(siteUrl),
+
+  title: {
+    default: siteTitle,
+    template: "%s | Ashir Arif",
+  },
+  description: siteDescription,
+
+  keywords: [
+    "MERN Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "Full Stack Developer",
+    "JavaScript Developer",
+    "TypeScript Developer",
+    "MongoDB",
+    "Express.js",
+    "Web Developer Pakistan",
+    "Freelance Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Portfolio",
+    "Ashir Arif",
+  ],
+
+  authors: [{ name: "Ashir Arif", url: siteUrl }],
+  creator: "Ashir Arif",
+  publisher: "Ashir Arif",
+
+  alternates: {
+    canonical: siteUrl,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Ashir Arif Portfolio",
+    title: siteTitle,
+    description: siteDescription,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ashir Arif — MERN Stack Developer",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/og-image.png"],
+    creator: "@ashirarif",
+    site: "@ashirarif",
+  },
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
+  },
+
+  manifest: "/site.webmanifest",
+
+  category: "technology",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ashir Arif",
+  url: siteUrl,
+  email: "ashir.codesmith@gmail.com",
+  jobTitle: "MERN Stack Developer",
+  description: siteDescription,
+  image: `${siteUrl}/og-image.png`,
+  sameAs: [
+    "https://github.com/ashirarif",
+    "https://linkedin.com/in/ashirarif",
+  ],
+  knowsAbout: [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "Express.js",
+    "TypeScript",
+    "JavaScript",
+    "Full Stack Web Development",
+  ],
+  offers: {
+    "@type": "Offer",
+    description: "Freelance web development services",
+    availability: "https://schema.org/InStock",
+  },
 };
 
 export default function RootLayout({
@@ -34,12 +150,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
-        className={cn(
-          outfit.variable,
-          jakarta.variable,
-          "font-body antialiased",
-        )}
+        className={cn(outfit.variable, jakarta.variable, "font-body antialiased")}
       >
         <ThemeProvider
           attribute="class"

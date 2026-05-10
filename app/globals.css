@@ -124,6 +124,7 @@
   html {
     /* Prevents layout shift (scrollbar width jump) when overflow:hidden is applied on theme switch */
     scrollbar-gutter: stable;
+    overflow-x: hidden;
   }
   * {
     @apply border-border;
@@ -131,6 +132,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    overflow-x: hidden;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);

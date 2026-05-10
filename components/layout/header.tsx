@@ -17,12 +17,12 @@ import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/mode-toggle";
 
 const navItems = [
-  { name: "About", href: "about", icon: User },
-  { name: "Skills", href: "skills", icon: Code2 },
-  { name: "Work", href: "experience", icon: Briefcase },
-  { name: "Edu", href: "education", icon: GraduationCap },
-  { name: "Projects", href: "projects", icon: FolderOpen },
-  { name: "Contact", href: "contact", icon: MessageSquare },
+  { name: "About",    href: "about",      icon: User },
+  { name: "Skills",   href: "skills",     icon: Code2 },
+  { name: "Work",     href: "experience", icon: Briefcase },
+  { name: "Edu",      href: "education",  icon: GraduationCap },
+  { name: "Projects", href: "projects",   icon: FolderOpen },
+  { name: "Contact",  href: "contact",    icon: MessageSquare },
 ];
 
 export function Header() {
@@ -35,14 +35,11 @@ export function Header() {
     restDelta: 0.001,
   });
 
-  const handleScroll = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string
-  ) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     if (!id) return;
     if (lenis) {
-      lenis.scrollTo(`#${id}`, { offset: -80 });
+      lenis.scrollTo(`#${id}`, { offset: -70 });
     } else {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }
@@ -66,19 +63,29 @@ export function Header() {
 
   return (
     <>
-      {/* Scroll Progress */}
+      {/* Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-0.5 bg-primary origin-left z-[60]"
         style={{ scaleX }}
       />
 
-      {/* ── Top Header (desktop + mobile logo/toggle) ── */}
-      <header className="fixed top-0 z-50 w-full flex justify-center pt-3 md:pt-5 px-4 pointer-events-none">
+      {/* ── Top Header ── */}
+      {/*
+        Mobile:  full-width bar flush to top edge, logo left + toggle right
+        Desktop: centered floating pill with full nav
+      */}
+      <header className="fixed top-0 z-50 w-full flex justify-center md:pt-5 md:px-4 pointer-events-none">
         <motion.div
           initial={{ y: -80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="glass rounded-full px-5 md:px-8 py-3 md:py-4 flex items-center pointer-events-auto gap-4 md:gap-10"
+          className={cn(
+            "glass flex items-center justify-between pointer-events-auto",
+            // mobile: full width, square corners, bottom border
+            "w-full px-5 py-3.5 rounded-none border-b border-black/10 dark:border-white/10 gap-4",
+            // desktop: auto width pill, no bottom border, extra gap
+            "md:w-auto md:px-8 md:py-4 md:rounded-full md:border-0 md:gap-10"
+          )}
         >
           <Link
             href="/"
@@ -141,21 +148,25 @@ export function Header() {
                 {active && (
                   <motion.div
                     layoutId="bottomNavPill"
-                    className="absolute inset-0 bg-primary/12 dark:bg-primary/15 rounded-xl"
+                    className="absolute inset-0 bg-primary/10 dark:bg-primary/15 rounded-xl"
                     transition={{ type: "spring", stiffness: 380, damping: 32 }}
                   />
                 )}
                 <Icon
                   className={cn(
-                    "w-[22px] h-[22px] relative z-10 transition-colors duration-200",
-                    active ? "text-primary" : "text-foreground/45 dark:text-muted-foreground"
+                    "w-5 h-5 relative z-10 transition-colors duration-200",
+                    active
+                      ? "text-primary"
+                      : "text-foreground/45 dark:text-muted-foreground"
                   )}
                   strokeWidth={active ? 2.2 : 1.8}
                 />
                 <span
                   className={cn(
                     "text-[10px] font-semibold relative z-10 transition-colors duration-200",
-                    active ? "text-primary" : "text-foreground/45 dark:text-muted-foreground"
+                    active
+                      ? "text-primary"
+                      : "text-foreground/45 dark:text-muted-foreground"
                   )}
                 >
                   {name}

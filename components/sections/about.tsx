@@ -37,11 +37,11 @@ const cards = [
 
 export function About() {
   return (
-    <section id="about" className="container relative py-8 md:py-12 px-4 md:px-6 overflow-hidden">
+    <section id="about" className="container relative py-8 md:py-12 px-4 md:px-6 overflow-hidden scroll-mt-16">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <motion.div
-          initial={{ opacity: 0, x: -30, filter: "blur(4px)" }}
-          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease }}
           viewport={{ once: true }}
           className="relative z-10"

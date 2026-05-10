@@ -10,7 +10,7 @@ const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 export function Experience() {
   return (
-    <section id="experience" className="container relative py-8 md:py-12 px-4 md:px-6">
+    <section id="experience" className="container relative py-8 md:py-12 px-4 md:px-6 scroll-mt-16">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,8 +29,8 @@ export function Experience() {
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1, ease }}
             viewport={{ once: true }}
             className={`relative flex flex-col md:flex-row gap-4 md:gap-8 mb-8 ${

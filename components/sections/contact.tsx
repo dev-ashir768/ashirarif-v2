@@ -61,10 +61,10 @@ function FloatingInput({
         }}
         className={cn(
           "peer block w-full h-14 px-4 pt-5 pb-1 rounded-2xl border text-base text-foreground focus:outline-none focus:ring-2 transition-all duration-200",
-          "bg-black/5 dark:bg-white/5",
+          "bg-white/80 dark:bg-white/5",
           error
             ? "border-destructive/60 focus:ring-destructive/20 focus:border-destructive/60"
-            : "border-black/10 dark:border-white/10 focus:ring-primary/20 focus:border-primary/50",
+            : "border-black/20 dark:border-white/10 focus:ring-primary/30 focus:border-primary/60",
           className
         )}
       />
@@ -122,10 +122,10 @@ function FloatingTextarea({
         }}
         className={cn(
           "peer block w-full px-4 pt-7 pb-3 min-h-[130px] sm:min-h-[150px] rounded-2xl border text-base text-foreground resize-none focus:outline-none focus:ring-2 transition-all duration-200",
-          "bg-black/5 dark:bg-white/5",
+          "bg-white/80 dark:bg-white/5",
           error
             ? "border-destructive/60 focus:ring-destructive/20 focus:border-destructive/60"
-            : "border-black/10 dark:border-white/10 focus:ring-primary/20 focus:border-primary/50",
+            : "border-black/20 dark:border-white/10 focus:ring-primary/30 focus:border-primary/60",
           className
         )}
       />
@@ -215,20 +215,20 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-10 md:py-16 px-4 md:px-6 overflow-hidden"
+      className="relative py-10 md:py-16 px-4 md:px-6 overflow-hidden scroll-mt-16"
     >
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full mix-blend-screen pointer-events-none -z-10" />
 
       <div className="container relative z-10 max-w-6xl mx-auto">
         <div className="glass-card rounded-2xl md:rounded-[2rem] p-5 md:p-12 border border-black/5 dark:border-white/10 relative overflow-hidden">
-          <div className="absolute inset-0 bg-linear-to-b from-black/5 dark:from-white/5 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-b from-white/20 dark:from-white/5 to-transparent pointer-events-none" />
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-16 relative z-10">
             {/* Info Side */}
             <div className="flex flex-col gap-6">
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease }}
                 viewport={{ once: true }}
               >
@@ -277,7 +277,7 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1, ease }}
               viewport={{ once: true }}
-              className="bg-white/50 dark:bg-black/20 p-4 sm:p-6 rounded-2xl border border-black/5 dark:border-white/5 backdrop-blur-sm"
+              className="bg-white/70 dark:bg-black/20 p-4 sm:p-6 rounded-2xl border border-black/10 dark:border-white/5 backdrop-blur-sm"
             >
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <FloatingInput

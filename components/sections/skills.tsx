@@ -99,11 +99,12 @@ export function Skills() {
         viewport={{ once: true }}
         className="text-center mb-8"
       >
+        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Tech Stack</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
-          Tech <span className="text-primary">Arsenal</span>
+          My Tech <span className="text-primary">Arsenal</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-          Technologies I use to build fast, scalable, full-stack applications.
+          Tools and technologies I use to build fast, scalable, full-stack applications.
         </p>
       </motion.div>
 

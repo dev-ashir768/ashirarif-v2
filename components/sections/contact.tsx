@@ -232,15 +232,16 @@ export function Contact() {
                 transition={{ duration: 0.5, ease }}
                 viewport={{ once: true }}
               >
+                <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Get In Touch</p>
                 <h2 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
                   Let&apos;s build{" "}
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-purple-400 to-pink-400 animate-gradient-x bg-[size:200%_auto]">
-                    something epic.
+                    something great.
                   </span>
                 </h2>
                 <p className="text-sm md:text-base text-muted-foreground max-w-sm leading-relaxed">
-                  Available for freelance and remote teams. Let&apos;s turn your
-                  idea into reality.
+                  Open to freelance projects, full-time roles, and remote teams.
+                  Let&apos;s turn your idea into a product people love.
                 </p>
               </motion.div>
 

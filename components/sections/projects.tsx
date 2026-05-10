@@ -40,11 +40,12 @@ export function Projects() {
           className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4"
         >
           <div className="flex-1">
+            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Portfolio</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
               Selected <span className="text-primary">Work</span>
             </h2>
             <p className="text-muted-foreground text-base max-w-md">
-              A collection of projects where design meets functionality.
+              Real projects shipped for real clients — where design meets engineering.
             </p>
           </div>
           <Button

@@ -48,18 +48,19 @@ export function About() {
         >
           <div className="absolute -top-10 -left-10 w-20 h-20 bg-primary/20 rounded-full blur-2xl" />
 
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-5 tracking-tight">
-            Beyond the <span className="text-primary">Code</span>.
+          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">About Me</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-5 tracking-tight leading-tight">
+            Crafting digital products <span className="text-primary">people love</span>.
           </h2>
           <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
             <p>{personalData.about}</p>
             <p>
-              I don&apos;t just write code — I engineer solutions. My philosophy
-              revolves around interfaces that feel natural and backends that are
-              invisible yet powerful.
+              I don&apos;t just build websites — I build experiences. Every project
+              I take on is approached with the same mindset: clean architecture,
+              thoughtful UX, and code that scales.
             </p>
-            <p className="border-l-4 border-primary pl-5 italic text-foreground text-base">
-              &quot;Great software is a combination of logic, art, and empathy.&quot;
+            <p className="border-l-4 border-primary pl-5 italic text-foreground/90 text-base">
+              &quot;Great software is built at the intersection of logic, art, and empathy.&quot;
             </p>
           </div>
         </motion.div>

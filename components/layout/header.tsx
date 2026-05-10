@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
 import {
   User,
@@ -89,13 +90,22 @@ export function Header() {
         >
           <Link
             href="/"
-            className="font-heading font-bold text-lg tracking-tighter hover:text-primary transition-colors"
+            className="flex items-center gap-2 hover:opacity-85 transition-opacity"
             onClick={(e) => {
               e.preventDefault();
               lenis?.scrollTo(0);
             }}
           >
-            ashir
+            <div className="relative w-8 h-8 rounded-full overflow-hidden ring-1 ring-primary/30 shrink-0">
+              <Image
+                src="/branding/logo.png"
+                alt="Ashir Arif"
+                fill
+                className="object-cover mix-blend-screen"
+                priority
+              />
+            </div>
+            <span className="font-heading font-bold text-base tracking-tight hidden sm:block">ashir</span>
           </Link>
 
           {/* Desktop Nav */}

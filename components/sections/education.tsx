@@ -17,11 +17,12 @@ export function Education() {
         viewport={{ once: true }}
         className="text-center mb-10"
       >
+        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Education</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
-          Education &amp; <span className="text-primary">Certifications</span>
+          Academic <span className="text-primary">Background</span>
         </h2>
         <p className="text-muted-foreground text-base">
-          My academic foundation and professional credentials.
+          My academic foundation and continuous learning journey.
         </p>
       </motion.div>
 

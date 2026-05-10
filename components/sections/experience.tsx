@@ -18,6 +18,7 @@ export function Experience() {
         viewport={{ once: true }}
         className="text-center mb-10"
       >
+        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Experience</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
           Professional <span className="text-primary">Journey</span>
         </h2>

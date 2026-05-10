@@ -41,7 +41,7 @@ export function Education() {
           >
             <div className="absolute left-4 md:left-1/2 top-6 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-primary/20 transform md:-translate-x-1/2 translate-x-[-50%] z-10" />
 
-            <div className="ml-10 md:ml-0 w-full md:w-1/2">
+            <div className="ml-10 md:ml-0 w-[calc(100%-2.5rem)] md:w-1/2">
               <motion.div whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
                 <Card className="glass-card p-5 relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity">

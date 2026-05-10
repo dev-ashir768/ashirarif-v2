@@ -47,7 +47,7 @@ const item = {
 
 export function Skills() {
   return (
-    <section id="skills" className="relative py-14 md:py-20 container px-4 md:px-6">
+    <section id="skills" className="relative py-8 md:py-12 container px-4 md:px-6">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

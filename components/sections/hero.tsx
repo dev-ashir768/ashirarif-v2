@@ -17,7 +17,6 @@ export function Hero() {
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-purple-500/15 blur-[80px] rounded-full mix-blend-screen animate-blob animation-delay-2000 opacity-50 pointer-events-none will-change-transform" />
 
       <div className="container relative z-10 flex flex-col items-center text-center">
-
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.7, filter: "blur(8px)" }}
@@ -110,9 +109,21 @@ export function Hero() {
           className="mt-8 md:mt-12 flex gap-4 text-muted-foreground"
         >
           {[
-            { href: "https://github.com/ashirarif", Icon: Github, label: "GitHub" },
-            { href: "https://linkedin.com/in/ashirarif", Icon: Linkedin, label: "LinkedIn" },
-            { href: `mailto:${personalData.email}`, Icon: Mail, label: "Email" },
+            {
+              href: "https://github.com/ashirarif",
+              Icon: Github,
+              label: "GitHub",
+            },
+            {
+              href: "https://linkedin.com/in/ashirarif",
+              Icon: Linkedin,
+              label: "LinkedIn",
+            },
+            {
+              href: `mailto:${personalData.email}`,
+              Icon: Mail,
+              label: "Email",
+            },
           ].map(({ href, Icon, label }) => (
             <a
               key={href}

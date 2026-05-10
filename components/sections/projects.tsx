@@ -6,6 +6,7 @@ import { Github, ArrowUpRight, Loader2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/data";
 
@@ -80,10 +81,10 @@ export function Projects() {
                 <div className="p-6 relative z-10 flex flex-col flex-1">
                   <div className="flex justify-between items-start">
                     <div>
-                      <h3 className="font-heading text-2xl font-bold group-hover:text-primary transition-colors">
+                      <h3 className="font-heading text-xl font-bold group-hover:text-primary transition-colors">
                         {project.title}
                       </h3>
-                      {/* <div className="flex gap-2 mt-2 flex-wrap">
+                      <div className="flex gap-2 mt-2 flex-wrap">
                         {project.tags.map((tag) => (
                           <Badge
                             key={tag}
@@ -93,7 +94,7 @@ export function Projects() {
                             {tag}
                           </Badge>
                         ))}
-                      </div> */}
+                      </div>
                     </div>
                     <Link
                       href={project.link}
@@ -103,9 +104,9 @@ export function Projects() {
                       <ArrowUpRight className="w-5 h-5" />
                     </Link>
                   </div>
-                  {/* <p className="text-muted-foreground text-sm leading-relaxed flex-1">
+                  <p className="text-muted-foreground text-sm leading-relaxed flex-1 mt-3">
                     {project.description}
-                  </p> */}
+                  </p>
                 </div>
               </motion.div>
             ))}

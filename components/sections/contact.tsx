@@ -73,7 +73,7 @@ export function Contact() {
           {/* Glossy Overlay */}
           <div className="absolute inset-0 bg-linear-to-b from-black/5 dark:from-white/5 to-transparent pointer-events-none" />
 
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-24 relative z-10">
             {/* Info Side */}
             <div className="flex flex-col justify-between h-full">
               <motion.div
@@ -82,7 +82,7 @@ export function Contact() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
+                <h2 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-8 leading-tight">
                   Let&apos;s build <br />
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-purple-400 to-pink-400 animate-gradient-x bg-size-[200%_auto]">
                     something epic.
@@ -177,7 +177,7 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-white/40 dark:bg-black/20 p-8 rounded-3xl border border-black/5 dark:border-white/5 backdrop-blur-sm"
+              className="bg-white/40 dark:bg-black/20 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-black/5 dark:border-white/5 backdrop-blur-sm"
             >
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
                 <div className="space-y-2">
@@ -188,7 +188,7 @@ export function Contact() {
                     placeholder="John Doe"
                     {...register("name")}
                     className={cn(
-                      "bg-black/5 dark:bg-white/5 border-black/5 dark:border-white/5 h-16 px-6 text-lg rounded-2xl focus-visible:ring-primary focus-visible:border-primary/50 transition-all placeholder:text-muted-foreground/50",
+                      "bg-black/5 dark:bg-white/5 border-black/5 dark:border-white/5 h-12 sm:h-16 px-4 sm:px-6 text-base sm:text-lg rounded-2xl focus-visible:ring-primary focus-visible:border-primary/50 transition-all placeholder:text-muted-foreground/50",
                       errors.name &&
                         "border-destructive focus-visible:ring-destructive"
                     )}
@@ -208,7 +208,7 @@ export function Contact() {
                     placeholder="john@example.com"
                     {...register("email")}
                     className={cn(
-                      "bg-black/5 dark:bg-white/5 border-black/5 dark:border-white/5 h-16 px-6 text-lg rounded-2xl focus-visible:ring-primary focus-visible:border-primary/50 transition-all placeholder:text-muted-foreground/50",
+                      "bg-black/5 dark:bg-white/5 border-black/5 dark:border-white/5 h-12 sm:h-16 px-4 sm:px-6 text-base sm:text-lg rounded-2xl focus-visible:ring-primary focus-visible:border-primary/50 transition-all placeholder:text-muted-foreground/50",
                       errors.email &&
                         "border-destructive focus-visible:ring-destructive"
                     )}
@@ -228,7 +228,7 @@ export function Contact() {
                     placeholder="I have a project about..."
                     {...register("message")}
                     className={cn(
-                      "bg-black/5 dark:bg-white/5 border-black/5 dark:border-white/5 min-h-[180px] p-6 text-lg rounded-2xl focus-visible:ring-primary focus-visible:border-primary/50 resize-none transition-all placeholder:text-muted-foreground/50",
+                      "bg-black/5 dark:bg-white/5 border-black/5 dark:border-white/5 min-h-[120px] sm:min-h-[180px] p-4 sm:p-6 text-base sm:text-lg rounded-2xl focus-visible:ring-primary focus-visible:border-primary/50 resize-none transition-all placeholder:text-muted-foreground/50",
                       errors.message &&
                         "border-destructive focus-visible:ring-destructive"
                     )}
@@ -243,7 +243,7 @@ export function Contact() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full h-16 text-lg rounded-2xl font-heading font-bold bg-primary hover:bg-primary/90 transition-all hover:scale-[1.01] shadow-xl shadow-primary/20"
+                  className="w-full h-12 sm:h-16 text-base sm:text-lg rounded-2xl font-heading font-bold bg-primary hover:bg-primary/90 transition-all hover:scale-[1.01] shadow-xl shadow-primary/20"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

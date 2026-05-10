@@ -1,0 +1,17 @@
+{
+  "name": "Ashir Arif — MERN Stack Developer",
+  "short_name": "Ashir Arif",
+  "description": "Portfolio of Ashir Arif, MERN Stack Developer specializing in Next.js, React, Node.js and TypeScript.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#7928ca",
+  "icons": [
+    {
+      "src": "/branding/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -91,7 +91,7 @@ const item = {
 
 export function Skills() {
   return (
-    <section id="skills" className="relative py-8 md:py-12 container px-4 md:px-6 scroll-mt-16">
+    <section id="skills" className="container relative py-8 md:py-12 scroll-mt-16">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

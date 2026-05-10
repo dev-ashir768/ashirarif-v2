@@ -130,7 +130,7 @@ export function Header() {
       {/* ── Mobile Bottom Nav ── */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
         <div
-          className="glass border-t border-black/10 dark:border-white/10 flex items-center justify-around"
+          className="glass border-t border-black/10 dark:border-white/10 flex items-center justify-between px-6"
           style={{
             paddingTop: "10px",
             paddingBottom: "max(10px, env(safe-area-inset-bottom))",

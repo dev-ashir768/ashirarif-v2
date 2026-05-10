@@ -37,7 +37,7 @@ const cards = [
 
 export function About() {
   return (
-    <section id="about" className="container relative py-8 md:py-12 px-4 md:px-6 overflow-hidden scroll-mt-16">
+    <section id="about" className="container relative py-8 md:py-12 overflow-hidden scroll-mt-16">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

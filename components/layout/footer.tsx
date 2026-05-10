@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="relative py-10 bg-black/5 dark:bg-black/40 border-t border-black/10 dark:border-white/5 overflow-hidden">
+    <footer className="hidden md:block relative py-10 bg-black/5 dark:bg-black/40 border-t border-black/10 dark:border-white/5 overflow-hidden">
       <div className="container relative z-10 flex flex-col items-center justify-center text-center">
         <Link
           href="/"

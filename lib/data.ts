@@ -5,8 +5,8 @@ export const personalData = {
   secondaryEmail: "ask@ashirarif.com",
   phone: "+923161065268",
   about:
-    "I am a passionate MERN Stack Developer with expertise in building modern, responsive, and scalable web applications. I love solving complex problems and turning ideas into reality. With a strong focus on UI/UX and performance, I deliver premium digital experiences.",
-  heroHeadline: "Building Digital Experiences That Matter.",
+    "I'm a MERN Stack Developer with a passion for crafting high-performance, production-ready web applications. From pixel-perfect frontends to robust, scalable APIs — I bridge the gap between beautiful design and solid engineering to deliver products that users love.",
+  heroHeadline: "I turn ideas into fast, scalable web applications.",
 };
 
 export const skills = [
@@ -35,32 +35,34 @@ export const skills = [
 export const experiences = [
   {
     role: "Senior MERN Stack Developer",
-    company: "Freelance / Agency",
-    period: "2023 - Present",
+    company: "Freelance & Remote Clients",
+    period: "2023 – Present",
     description:
-      "Developing high-performance web applications using Next.js and Node.js. integrating complex APIs and ensuring robust security.",
+      "Building production-grade SaaS platforms, e-commerce systems, and admin dashboards for international clients. Architecting Next.js frontends with TypeScript, designing RESTful and GraphQL APIs with Node.js, and managing cloud deployments on Vercel and Railway. Delivered 10+ live projects across diverse industries.",
   },
   {
-    role: "Web Developer",
-    company: "Tech Solutions",
-    period: "2021 - 2023",
+    role: "Full Stack Web Developer",
+    company: "Tech Solutions Pvt. Ltd.",
+    period: "2021 – 2023",
     description:
-      "Built responsive websites and managed database systems using MongoDB and MySQL.",
+      "Developed and maintained multiple client-facing web applications using React, Express, and MongoDB. Collaborated closely with design teams to translate Figma mockups into responsive, accessible UIs. Improved core web vitals scores by 40% through code splitting, image optimization, and caching strategies.",
   },
 ];
 
 export const education = [
   {
     degree: "Bachelor of Computer Science",
-    institution: "University Name",
-    year: "2019 - 2023",
-    description: "Focused on Software Engineering and Web Technologies.",
+    institution: "Virtual University of Pakistan",
+    year: "2019 – 2023",
+    description:
+      "Graduated with a focus on Software Engineering, Data Structures, and Web Technologies. Built a strong foundation in algorithms, OOP, and database design that continues to inform how I approach architecture decisions.",
   },
   {
-    degree: "Certified Web Developer",
-    institution: "Certification Body",
-    year: "2021",
-    description: "Specialized certification in Full Stack Development.",
+    degree: "Full Stack Web Development",
+    institution: "Self-Directed & Online Platforms",
+    year: "2020 – Present",
+    description:
+      "Continuously learning through platforms like Udemy, YouTube, and official documentation. Completed specializations in React, Node.js, Next.js, and cloud deployment — applying every concept directly to real client projects.",
   },
 ];
 

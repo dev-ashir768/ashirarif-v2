@@ -110,12 +110,12 @@ export function Hero() {
         >
           {[
             {
-              href: "https://github.com/ashirarif",
+              href: "https://github.com/dev-ashir768",
               Icon: Github,
               label: "GitHub",
             },
             {
-              href: "https://linkedin.com/in/ashirarif",
+              href: "https://www.linkedin.com/in/ashir-arif-642a72279/",
               Icon: Linkedin,
               label: "LinkedIn",
             },

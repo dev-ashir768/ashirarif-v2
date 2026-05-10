@@ -99,9 +99,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: [
-      { url: "/branding/logo.png", type: "image/png" },
-    ],
+    icon: [{ url: "/branding/logo.png", type: "image/png" }],
     apple: "/branding/logo.png",
     shortcut: "/branding/logo.png",
   },
@@ -121,8 +119,8 @@ const jsonLd = {
   description: siteDescription,
   image: `${siteUrl}/og-image.png`,
   sameAs: [
-    "https://github.com/ashirarif",
-    "https://linkedin.com/in/ashirarif",
+    "https://github.com/dev-ashir768",
+    "https://www.linkedin.com/in/ashir-arif-642a72279/",
   ],
   knowsAbout: [
     "React.js",
@@ -155,13 +153,13 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={cn(outfit.variable, jakarta.variable, "font-body antialiased")}
+        className={cn(
+          outfit.variable,
+          jakarta.variable,
+          "font-body antialiased",
+        )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <QueryProvider>
             <SmoothScroll>
               <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">

@@ -16,7 +16,7 @@ export function Footer() {
 
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-6">
           <a
-            href="https://github.com/ashirarif"
+            href="https://github.com/dev-ashir768"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 bg-black/5 dark:bg-white/5 rounded-full hover:bg-primary/20 hover:text-primary transition-all hover:-translate-y-1"
@@ -24,7 +24,7 @@ export function Footer() {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com/in/ashirarif"
+            href="https://www.linkedin.com/in/ashir-arif-642a72279/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 bg-black/5 dark:bg-white/5 rounded-full hover:bg-primary/20 hover:text-primary transition-all hover:-translate-y-1"

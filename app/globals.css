@@ -4,6 +4,22 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
 :root {
   --background: 240 10% 98%;
   --foreground: 240 10% 4%;
@@ -123,6 +139,18 @@
 }
 
 @layer utilities {
+  .animate-blob {
+    animation: blob 8s infinite ease-in-out;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animate-gradient-x {
+    animation: gradient-x 4s ease infinite;
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
   .container {
     @apply mx-auto px-4 md:px-8 max-w-7xl;
   }

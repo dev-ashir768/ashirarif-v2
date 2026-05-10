@@ -6,63 +6,63 @@ import { Briefcase, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { experiences } from "@/lib/data";
 
+const ease = [0.25, 0.46, 0.45, 0.94] as const;
+
 export function Experience() {
   return (
-    <section id="experience" className="container relative py-20 px-4 md:px-6">
+    <section id="experience" className="container relative py-14 md:py-20 px-4 md:px-6">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.5, ease }}
         viewport={{ once: true }}
-        className="text-center mb-16"
+        className="text-center mb-10"
       >
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
           Professional <span className="text-primary">Journey</span>
         </h2>
       </motion.div>
 
       <div className="relative max-w-3xl mx-auto">
-        {/* Vertical Line */}
-        <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-primary/50 to-transparent transform md:-translate-x-1/2 ml-4 md:ml-0" />
+        <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-primary/40 to-transparent transform md:-translate-x-1/2 ml-4 md:ml-0" />
 
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1, ease }}
             viewport={{ once: true }}
-            className={`relative flex flex-col md:flex-row gap-4 md:gap-8 mb-12 ${
+            className={`relative flex flex-col md:flex-row gap-4 md:gap-8 mb-8 ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            {/* Center Dot */}
-            <div className="absolute left-4 md:left-1/2 top-6 w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 transform md:-translate-x-1/2 translate-x-[-50%] z-10" />
+            <div className="absolute left-4 md:left-1/2 top-6 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-primary/20 transform md:-translate-x-1/2 translate-x-[-50%] z-10" />
 
-            {/* Content */}
-            <div className="ml-12 md:ml-0 w-full md:w-1/2">
-              <Card className="glass-card p-6 relative overflow-hidden group">
-                <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Briefcase className="w-16 h-16" />
-                </div>
-                <CardContent className="p-0">
-                  <span className="inline-flex items-center gap-2 text-sm text-primary font-medium mb-2 bg-primary/10 px-3 py-1 rounded-full">
-                    <Calendar className="w-3 h-3" /> {exp.period}
-                  </span>
-                  <h3 className="font-heading text-xl font-bold mt-2">
-                    {exp.role}
-                  </h3>
-                  <p className="text-lg text-muted-foreground mb-4">
-                    {exp.company}
-                  </p>
-                  <p className="text-sm text-muted-foreground/80 leading-relaxed">
-                    {exp.description}
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="ml-10 md:ml-0 w-full md:w-1/2">
+              <motion.div whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
+                <Card className="glass-card p-5 relative overflow-hidden group">
+                  <div className="absolute top-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <Briefcase className="w-14 h-14" />
+                  </div>
+                  <CardContent className="p-0">
+                    <span className="inline-flex items-center gap-1.5 text-xs text-primary font-medium mb-2 bg-primary/10 px-2.5 py-1 rounded-full">
+                      <Calendar className="w-3 h-3" /> {exp.period}
+                    </span>
+                    <h3 className="font-heading text-lg font-bold mt-1.5">
+                      {exp.role}
+                    </h3>
+                    <p className="text-base text-muted-foreground mb-2">
+                      {exp.company}
+                    </p>
+                    <p className="text-sm text-muted-foreground/80 leading-relaxed">
+                      {exp.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </div>
 
-            {/* Empty space for the other side */}
             <div className="hidden md:block w-1/2" />
           </motion.div>
         ))}

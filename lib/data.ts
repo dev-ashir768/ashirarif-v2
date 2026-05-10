@@ -92,81 +92,81 @@ export const projects = [
   {
     title: "The IFFC Show",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Event showcase platform for the International Fashion & Film Craft Show, featuring artist portfolios, event schedules, and ticket booking.",
     image: "/projects-images/theiffshow.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Firebase", "Tailwind"],
     link: "https://theiffshow.com",
   },
   {
     title: "Aussie Steel Beams",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Industrial product catalogue site for an Australian steel supplier with quote request system and product specification management.",
     image: "/projects-images/aussiesteelbeams.com.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Node.js", "MongoDB"],
     link: "https://aussiesteelbeams.com.au",
   },
   {
     title: "Bristol Eateries",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Restaurant discovery platform for Bristol with category filtering, location-based search, and integrated contact forms.",
     image: "/projects-images/bristol-eateries.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Firebase", "Tailwind"],
     link: "https://bristol-eateries.vercel.app",
   },
   {
     title: "Background Checker",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Web tool for real-time background removal using browser-side image processing, with download and share capabilities.",
     image: "/projects-images/background-checker.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Canvas API", "Tailwind"],
     link: "https://background-checker.vercel.app",
   },
   {
     title: "Dr. Nishant Agarwala",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Professional medical portfolio and appointment booking website for a specialist doctor with patient inquiry management.",
     image: "/projects-images/drnishantagarwala.com.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["Next.js", "Tailwind", "EmailJS"],
     link: "https://drnishantagarwala.com",
   },
   {
     title: "Codezy",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Developer tools platform offering code snippets, utilities, and productivity resources for software developers.",
     image: "/projects-images/codezy.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Firebase", "Tailwind"],
     link: "https://codezy.vercel.app",
   },
   {
     title: "Han Zak",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Modern business landing page with animated sections, service showcases, and integrated contact form.",
     image: "/projects-images/han-zak.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["Next.js", "Tailwind", "Framer Motion"],
     link: "https://han-zak.vercel.app",
   },
   {
     title: "Mak Alhadaf",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Corporate website with multilingual support, service listings, and lead generation forms for a Middle Eastern firm.",
     image: "/projects-images/mak-alhadaf.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "i18n", "Firebase"],
     link: "https://mak-alhadaf.vercel.app",
   },
   {
     title: "EyeWiz",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Optical retail e-commerce site with product catalog, virtual try-on concept, and streamlined checkout flow.",
     image: "/projects-images/eyewiz.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Node.js", "MongoDB"],
     link: "https://eyewiz.vercel.app",
   },
-   {
+  {
     title: "Ikigai",
     description:
-      "Property listing website with advanced filtering, map integration, and virtual tour capabilities.",
+      "Wellness and personal growth platform with goal tracking, journaling features, and motivational content delivery.",
     image: "/projects-images/ikigai-test.vercel.png",
-    tags: ["React", "Firebase", "Google Maps"],
+    tags: ["React", "Firebase", "Tailwind"],
     link: "https://ikigai-test.vercel.app",
   },
    {

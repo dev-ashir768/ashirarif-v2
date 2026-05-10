@@ -35,12 +35,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-6 md:mb-8"
+          className="font-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-6 md:mb-8"
         >
           <span className="block text-transparent bg-clip-text bg-linear-to-b from-foreground to-foreground/50">
             {personalData.name}
           </span>
-          <span className="block text-xl sm:text-4xl md:text-5xl font-light text-muted-foreground mt-2 md:mt-4">
+          <span className="block text-base sm:text-3xl md:text-5xl font-light text-muted-foreground mt-2 md:mt-4">
             {personalData.role}
           </span>
         </motion.h1>
@@ -85,7 +85,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-20 flex gap-6 text-muted-foreground"
+          className="mt-10 md:mt-20 flex gap-6 text-muted-foreground"
         >
           <a
             href="https://github.com/ashirarif"

@@ -121,6 +121,10 @@
 }
 
 @layer base {
+  html {
+    /* Prevents layout shift (scrollbar width jump) when overflow:hidden is applied on theme switch */
+    scrollbar-gutter: stable;
+  }
   * {
     @apply border-border;
   }
@@ -128,13 +132,12 @@
     @apply bg-background text-foreground;
     font-family: var(--font-body);
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+  }
+  /* Global cursor pointer for all interactive elements */
+  a, button, [role="button"], label[for], select {
+    cursor: pointer;
   }
 }
 

@@ -105,7 +105,7 @@ export function Header() {
                 priority
               />
             </div>
-            <span className="font-heading font-bold text-base tracking-tight hidden sm:block">ashir</span>
+            {/* <span className="font-heading font-bold text-base tracking-tight hidden sm:block">ashir</span> */}
           </Link>
 
           {/* Desktop Nav */}

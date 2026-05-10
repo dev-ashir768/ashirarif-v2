@@ -37,7 +37,7 @@ export function Hero() {
         </motion.div>
 
         {/* Available badge */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 16, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.6, delay: 0.15, ease }}
@@ -45,7 +45,7 @@ export function Hero() {
         >
           <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
           Available for new projects
-        </motion.div>
+        </motion.div> */}
 
         {/* Name + Role */}
         <motion.div

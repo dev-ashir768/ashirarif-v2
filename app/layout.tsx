@@ -51,7 +51,7 @@ export default function RootLayout({
             <SmoothScroll>
               <div className="relative flex min-h-screen flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
                 <Header />
-                <main className="flex-1">{children}</main>
+                <main className="flex-1 pb-20 md:pb-0">{children}</main>
                 <Footer />
               </div>
             </SmoothScroll>

@@ -10,7 +10,7 @@ const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 export function Experience() {
   return (
-    <section id="experience" className="container relative py-14 md:py-20 px-4 md:px-6">
+    <section id="experience" className="container relative py-8 md:py-12 px-4 md:px-6">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

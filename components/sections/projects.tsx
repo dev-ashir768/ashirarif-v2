@@ -28,7 +28,7 @@ export function Projects() {
   const hasMore = visibleCount < projects.length;
 
   return (
-    <section id="projects" className="py-14 md:py-20 px-4 md:px-6 relative">
+    <section id="projects" className="py-8 md:py-12 px-4 md:px-6 relative">
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/20 to-transparent" />
 
       <div className="container">

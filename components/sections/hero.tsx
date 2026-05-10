@@ -30,7 +30,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.6, delay: 0.2, ease }}
-          className="font-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-4 md:mb-6"
+          className="font-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tight mb-3 md:mb-5"
         >
           <span className="block text-transparent bg-clip-text bg-linear-to-b from-foreground to-foreground/50">
             {personalData.name}

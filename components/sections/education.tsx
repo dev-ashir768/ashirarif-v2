@@ -9,7 +9,7 @@ const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 export function Education() {
   return (
-    <section id="education" className="container relative py-8 md:py-12 px-4 md:px-6 scroll-mt-16">
+    <section id="education" className="container relative py-8 md:py-12 scroll-mt-16">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

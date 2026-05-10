@@ -215,11 +215,11 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-10 md:py-16 px-4 md:px-6 overflow-hidden scroll-mt-16"
+      className="relative py-10 md:py-16 overflow-hidden scroll-mt-16"
     >
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full mix-blend-screen pointer-events-none -z-10" />
 
-      <div className="container relative z-10 max-w-6xl mx-auto">
+      <div className="container relative z-10">
         <div className="glass-card rounded-2xl md:rounded-[2rem] p-5 md:p-12 border border-black/5 dark:border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-linear-to-b from-white/20 dark:from-white/5 to-transparent pointer-events-none" />
 

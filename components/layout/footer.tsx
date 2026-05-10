@@ -6,7 +6,7 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="relative py-10 bg-black/5 dark:bg-black/40 border-t border-black/10 dark:border-white/5 overflow-hidden">
-      <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center justify-center text-center">
+      <div className="container relative z-10 flex flex-col items-center justify-center text-center">
         <Link
           href="/"
           className="font-heading text-2xl font-bold tracking-tighter mb-6 hover:text-primary transition-colors"

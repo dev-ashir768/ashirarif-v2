@@ -116,7 +116,7 @@ export function Header() {
                   "text-sm font-medium transition-colors hover:text-primary relative group cursor-pointer",
                   activeSection === item.href
                     ? "text-primary"
-                    : "text-muted-foreground"
+                    : "text-foreground/60 dark:text-muted-foreground"
                 )}
               >
                 {item.name}
@@ -169,7 +169,7 @@ export function Header() {
                       "text-4xl font-heading font-bold transition-colors hover:text-primary",
                       activeSection === item.href
                         ? "text-primary"
-                        : "text-muted-foreground"
+                        : "text-foreground/60 dark:text-muted-foreground"
                     )}
                     onClick={(e) => handleScroll(e, item.href)}
                   >

@@ -191,9 +191,6 @@ export function Contact() {
           <a href={`mailto:${personalData.email}`} className="text-sm md:text-base font-medium hover:text-primary transition-colors truncate">
             {personalData.email}
           </a>
-          <a href={`mailto:${personalData.secondaryEmail}`} className="text-xs text-muted-foreground hover:text-primary transition-colors truncate">
-            {personalData.secondaryEmail}
-          </a>
         </div>
       ),
       href: undefined,

@@ -114,7 +114,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Ashir Arif",
   url: siteUrl,
-  email: "ashir.codesmith@gmail.com",
+  email: "info.ashirarif@gmail.com",
   jobTitle: "MERN Stack Developer",
   description: siteDescription,
   image: `${siteUrl}/og-image.png`,

@@ -1,8 +1,7 @@
 export const personalData = {
   name: "Ashir Arif",
   role: "MERN Stack Developer",
-  email: "ashir.codesmith@gmail.com",
-  secondaryEmail: "ask@ashirarif.com",
+  email: "info.ashirarif@gmail.com",
   phone: "+923161065268",
   about:
     "I'm a MERN Stack Developer with a passion for crafting high-performance, production-ready web applications. From pixel-perfect frontends to robust, scalable APIs — I bridge the gap between beautiful design and solid engineering to deliver products that users love.",
@@ -171,7 +170,7 @@ export const projects = [
     tags: ["React", "Firebase", "Tailwind"],
     link: "https://ikigai-test.vercel.app",
   },
-   {
+  {
     title: "Q by Aleksandra Baranova",
     description:
       "A productivity tool with team collaboration features, real-time updates using Socket.io, and drag-and-drop interface.",

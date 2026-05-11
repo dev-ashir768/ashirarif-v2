@@ -40,7 +40,7 @@ export function Footer() {
             <Twitter className="w-5 h-5" />
           </a>
           <a
-            href={`mailto:ashir.codesmith@gmail.com`}
+            href={`mailto:info.ashirarif@gmail.com`}
             className="p-2.5 bg-black/5 dark:bg-white/5 rounded-full hover:bg-primary/20 hover:text-primary transition-all hover:-translate-y-1"
           >
             <Mail className="w-5 h-5" />

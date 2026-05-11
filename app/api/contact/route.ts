@@ -79,8 +79,8 @@ const generateAdminEmail = (name: string, email: string, message: string) => `
       </div>
       <div class="action">
         <a href="mailto:${email}?subject=Re: Contact Inquiry" class="button">Reply to ${
-  name.split(" ")[0]
-}</a>
+          name.split(" ")[0]
+        }</a>
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@ export async function POST(req: Request) {
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -111,17 +111,15 @@ export async function POST(req: Request) {
     });
 
     const adminEmailPromise = transporter.sendMail({
-      from: `"${name}" <${process.env.SMTP_USER || "no-reply@ashirarif.com"}>`,
-      to: process.env.CONTACT_EMAIL || "ask@ashirarif.com",
+      from: `"${name}" <${process.env.SMTP_USER}>`,
+      to: process.env.ADMIN_EMAIL,
       subject: `New Lead: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: generateAdminEmail(name, email, message),
     });
 
     const userEmailPromise = transporter.sendMail({
-      from: `"Ashir Arif" <${
-        process.env.SMTP_USER || "no-reply@ashirarif.com"
-      }>`,
+      from: `"Ashir Arif" <${process.env.SMTP_USER}>`,
       to: email,
       subject: "Thank you for getting in touch",
       text: `Hi ${name},\n\nThanks for reaching out! I've received your message and will get back to you soon.\n\nBest,\nAshir`,
@@ -133,13 +131,13 @@ export async function POST(req: Request) {
 
     return NextResponse.json(
       { message: "Emails sent successfully" },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error("Request error:", error);
     return NextResponse.json(
       { error: "Internal Server Error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

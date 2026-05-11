@@ -201,12 +201,12 @@ export function Contact() {
       content: <span className="text-sm md:text-base font-medium">{personalData.phone}</span>,
       href: `https://wa.me/${personalData.phone.replace(/\s/g, "").replace("+", "")}`,
     },
-    {
-      icon: MapPin,
-      label: "Location",
-      content: <span className="text-sm md:text-base font-medium">Remote / Worldwide</span>,
-      href: undefined,
-    },
+    // {
+    //   icon: MapPin,
+    //   label: "Location",
+    //   content: <span className="text-sm md:text-base font-medium">Remote / Worldwide</span>,
+    //   href: undefined,
+    // },
   ];
 
   return (

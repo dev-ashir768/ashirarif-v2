@@ -21,7 +21,8 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const siteUrl = "https://ashirarif.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ashirarif.com";
+const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-D1FG03CXMR";
 const siteTitle = "Ashir Arif | AI Automation Developer — Chatbots, Voice Agents & Workflow Automation";
 const siteDescription =
   "Hire Ashir Arif — AI Automation Developer & MERN Stack Expert. I build AI chatbots, voice agents, and workflow automations using n8n, Make, Zapier, and OpenAI. Available for freelance projects worldwide.";
@@ -125,6 +126,18 @@ export const metadata: Metadata = {
 };
 
 const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home",       item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "About",      item: `${siteUrl}/#about` },
+      { "@type": "ListItem", position: 3, name: "Skills",     item: `${siteUrl}/#skills` },
+      { "@type": "ListItem", position: 4, name: "Experience", item: `${siteUrl}/#experience` },
+      { "@type": "ListItem", position: 5, name: "Projects",   item: `${siteUrl}/#projects` },
+      { "@type": "ListItem", position: 6, name: "Contact",    item: `${siteUrl}/#contact` },
+    ],
+  },
   {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -302,7 +315,7 @@ export default function RootLayout({
         ))}
       </head>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-D1FG03CXMR"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -310,7 +323,7 @@ export default function RootLayout({
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-D1FG03CXMR');
+          gtag('config', '${gaId}');
         `}
       </Script>
       <body

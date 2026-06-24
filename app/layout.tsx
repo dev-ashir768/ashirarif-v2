@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
@@ -300,6 +301,18 @@ export default function RootLayout({
           />
         ))}
       </head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-D1FG03CXMR"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-D1FG03CXMR');
+        `}
+      </Script>
       <body
         className={cn(
           outfit.variable,

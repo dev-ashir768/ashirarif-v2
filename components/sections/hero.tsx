@@ -61,6 +61,14 @@ export function Hero() {
           <p className="font-heading text-base sm:text-2xl md:text-4xl font-light text-muted-foreground mt-2 md:mt-3 tracking-wide">
             {personalData.role}
           </p>
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.32, ease }}
+            className="mt-2 md:mt-3 text-xs sm:text-sm md:text-base font-medium tracking-widest text-primary/80 uppercase"
+          >
+            {personalData.roleHighlight}
+          </motion.p>
         </motion.div>
 
         {/* Headline */}
@@ -89,7 +97,7 @@ export function Hero() {
               Let&apos;s Talk <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-          <Button
+          {/* <Button
             asChild
             variant="outline"
             size="lg"
@@ -98,7 +106,7 @@ export function Hero() {
             <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               Download CV <Download className="ml-2 h-4 w-4" />
             </Link>
-          </Button>
+          </Button> */}
         </motion.div>
 
         {/* Social Links */}

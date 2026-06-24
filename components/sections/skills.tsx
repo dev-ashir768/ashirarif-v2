@@ -31,7 +31,12 @@ import {
   SiVite,
   SiPrisma,
   SiSocketdotio,
+  SiOpenai,
+  SiN8N,
+  SiZapier,
+  SiMake,
 } from "react-icons/si";
+import { Bot, Mic, Workflow } from "lucide-react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -76,6 +81,15 @@ const skillData = [
 
   // Other
   { name: "Chrome Ext",    icon: SiGooglechrome, color: "#4285F4",   darkColor: "#4285F4" },
+
+  // AI Automation
+  { name: "OpenAI",        icon: SiOpenai,       color: "#111111",   darkColor: "#FFFFFF" },
+  { name: "n8n",           icon: SiN8N,          color: "#EA4B71",   darkColor: "#EA4B71" },
+  { name: "Zapier",        icon: SiZapier,       color: "#FF4A00",   darkColor: "#FF4A00" },
+  { name: "Make",          icon: SiMake,         color: "#6D00CC",   darkColor: "#A855F7" },
+  { name: "Chatbots",      icon: Bot,            color: "#7C3AED",   darkColor: "#A78BFA" },
+  { name: "Voice Agents",  icon: Mic,            color: "#7C3AED",   darkColor: "#A78BFA" },
+  { name: "Workflows",     icon: Workflow,       color: "#7C3AED",   darkColor: "#A78BFA" },
 ];
 
 const container = {
@@ -98,12 +112,12 @@ export function Skills() {
         viewport={{ once: true }}
         className="text-center mb-8"
       >
-        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Tech Stack</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Tech Stack & AI Tools</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
           My Tech <span className="text-primary">Arsenal</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-          Tools and technologies I use to build fast, scalable, full-stack applications.
+          Full-stack web development tools and AI automation platforms — from React & Node.js to n8n, Make, Zapier, and OpenAI.
         </p>
       </motion.div>
 

@@ -1,0 +1,47 @@
+# Ashir Arif — AI Automation Developer & MERN Stack Developer
+
+## About
+
+Ashir Arif is a freelance AI Automation Developer and MERN Stack Developer available for worldwide remote projects.
+
+He specializes in:
+- AI-powered chatbot development (OpenAI, Claude)
+- Voice agent development for phone and web interactions
+- End-to-end workflow automation using n8n, Make (Integromat), and Zapier
+- LLM integration into business systems
+- Full-stack web development with Next.js, React, Node.js, MongoDB, and TypeScript
+
+## Services
+
+### AI Automation
+- **AI Chatbots**: Intelligent customer support, lead qualification, and onboarding bots powered by OpenAI and Claude
+- **Voice Agents**: Automated AI voice agents for inbound/outbound calls and voice-based workflows
+- **Workflow Automation**: End-to-end business process automation eliminating manual, repetitive tasks
+- **LLM Integration**: Connecting OpenAI, Claude, and other LLMs into existing business tools and databases
+- **Lead Generation Automation**: Automated pipelines for capturing, qualifying, and nurturing leads
+
+### Web Development
+- **SaaS Platforms**: Production-grade multi-tenant apps with Next.js and Node.js
+- **E-commerce Systems**: Full e-commerce with Stripe, inventory management, and admin dashboards
+- **Admin Dashboards**: Data-rich dashboards with real-time updates
+- **REST & GraphQL APIs**: Scalable backend APIs with Express.js and Node.js
+
+## Tech Stack
+
+**AI Automation Tools**: n8n, Make (Integromat), Zapier, OpenAI API, Claude API
+**Frontend**: Next.js, React.js, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion
+**Backend**: Node.js, Express.js, Bun.js, GraphQL
+**Databases**: MongoDB, PostgreSQL, MySQL, Firebase, Prisma
+**DevOps**: Vercel, Railway, Docker, GitHub
+
+## Contact
+
+- **Website**: https://ashirarif.com
+- **Email**: info.ashirarif@gmail.com
+- **GitHub**: https://github.com/dev-ashir768
+- **LinkedIn**: https://www.linkedin.com/in/ashir-arif-642a72279/
+- **Location**: Pakistan (Available worldwide for remote projects)
+
+## Availability
+
+Available for freelance projects globally. Specializes in AI automation and full-stack web development for startups, SMEs, and international clients.

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Globe, Cpu, Zap } from "lucide-react";
+import { Code2, Globe, Cpu, Zap, Bot } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { personalData } from "@/lib/data";
@@ -22,16 +22,22 @@ const cards = [
     className: "bg-primary/10 border-primary/20",
   },
   {
+    icon: Bot,
+    title: "AI Automation",
+    desc: "Chatbots, voice agents & smart workflows.",
+    className: "bg-linear-to-br from-primary/20 to-transparent border-primary/20",
+  },
+  {
     icon: Code2,
     title: "Clean Code",
     desc: "Maintainable and readable architecture.",
-    className: "bg-linear-to-br from-primary/20 to-transparent border-primary/20",
+    className: "",
   },
   {
     icon: Zap,
     title: "Modern UI",
     desc: "Pixel-perfect premium designs.",
-    className: "",
+    className: "bg-primary/5 border-primary/10",
   },
 ];
 
@@ -55,9 +61,7 @@ export function About() {
           <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
             <p>{personalData.about}</p>
             <p>
-              I don&apos;t just build websites — I build experiences. Every project
-              I take on is approached with the same mindset: clean architecture,
-              thoughtful UX, and code that scales.
+              Beyond web development, I specialize in <strong className="text-foreground font-semibold">AI automation</strong> — building intelligent chatbots, voice agents, and end-to-end workflow automations using <strong className="text-foreground font-semibold">n8n, Make, Zapier, and OpenAI</strong>. I help businesses eliminate repetitive work and scale smarter with AI.
             </p>
             <p className="border-l-4 border-primary pl-5 italic text-foreground/90 text-base">
               &quot;Great software is built at the intersection of logic, art, and empathy.&quot;
@@ -80,7 +84,7 @@ export function About() {
               transition={{ duration: 0.4, delay: i * 0.08, ease }}
               viewport={{ once: true }}
               whileHover={{ y: -4 }}
-              className={i % 2 === 0 ? "mt-0 sm:mt-6" : ""}
+              className={i === 4 ? "col-span-2" : i % 2 === 0 ? "mt-0 sm:mt-6" : ""}
             >
               <Card
                 className={`glass-card p-4 md:p-5 transition-shadow hover:shadow-lg ${card.className}`}

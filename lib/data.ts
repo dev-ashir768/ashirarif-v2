@@ -1,11 +1,12 @@
 export const personalData = {
   name: "Ashir Arif",
-  role: "MERN Stack Developer",
+  role: "MERN Stack & AI Automation Developer",
+  roleHighlight: "Chatbots • Voice Agents • Workflow Automation",
   email: "info.ashirarif@gmail.com",
   phone: "+923161065268",
   about:
-    "I'm a MERN Stack Developer with a passion for crafting high-performance, production-ready web applications. From pixel-perfect frontends to robust, scalable APIs — I bridge the gap between beautiful design and solid engineering to deliver products that users love.",
-  heroHeadline: "I turn ideas into fast, scalable web applications.",
+    "I'm a MERN Stack & AI Automation Developer with a passion for crafting high-performance, production-ready web applications and intelligent automation systems. From pixel-perfect frontends to robust APIs and AI-powered chatbots, voice agents, and workflow automation — I bridge the gap between beautiful design and cutting-edge technology to deliver products that users love.",
+  heroHeadline: "I turn ideas into fast, scalable web apps & intelligent AI automations.",
 };
 
 export const skills = [
@@ -33,6 +34,20 @@ export const skills = [
 
 export const experiences = [
   {
+    role: "AI Automation Developer",
+    company: "Freelance & Remote Clients",
+    period: "2025 – Present",
+    description:
+      "Building intelligent automation systems for businesses — including AI-powered chatbots, voice agents, and end-to-end workflow automations. Integrating LLMs (OpenAI, Claude) with platforms like n8n, Make, and Zapier to automate lead generation, customer support, onboarding pipelines, and internal operations. Helping clients reduce manual work and scale smarter with AI.",
+  },
+  {
+    role: "MERN Stack & AI Automation Developer",
+    company: "Orio Technologies",
+    period: "2023 – Present",
+    description:
+      "Initially focused on building responsive web applications and robust backend APIs using the MERN stack. Expanded scope to design and implement intelligent AI automation workflows and custom chatbots (from 2024 onward), integrating LLMs to optimize business processes and operational efficiency.",
+  },
+  {
     role: "Senior MERN Stack Developer",
     company: "Freelance & Remote Clients",
     period: "2023 – Present",
@@ -50,18 +65,46 @@ export const experiences = [
 
 export const education = [
   {
-    degree: "Bachelor of Computer Science",
-    institution: "Virtual University of Pakistan",
-    year: "2019 – 2023",
+    degree: "AI Automation Development",
+    institution: "Self-Directed & Online Platforms",
+    year: "2024 – Present",
     description:
-      "Graduated with a focus on Software Engineering, Data Structures, and Web Technologies. Built a strong foundation in algorithms, OOP, and database design that continues to inform how I approach architecture decisions.",
+      "Continuously self-learning and building AI automation systems for businesses. Mastering Large Language Models (LLMs), voice agents, and workflow automation platforms like n8n, Make, and Zapier — applying every concept directly to real client projects.",
   },
   {
-    degree: "Full Stack Web Development",
-    institution: "Self-Directed & Online Platforms",
-    year: "2020 – Present",
+    degree: "Bachelor of Computer Science",
+    institution: "Federal Urdu University of Arts, Science and Technology",
+    year: "2023 – 2027",
     description:
-      "Continuously learning through platforms like Udemy, YouTube, and official documentation. Completed specializations in React, Node.js, Next.js, and cloud deployment — applying every concept directly to real client projects.",
+      "Currently pursuing a Bachelor of Computer Science degree with a strong focus on Software Engineering, Data Structures, and Web Technologies. Building a solid foundation in algorithms, OOP, and database design while applying learnings to real-world projects.",
+  },
+  {
+    degree: "ADSE - Advance Diploma in Software Engineering",
+    institution: "Aptech Learning Pakistan",
+    year: "2023 – 2024",
+    description:
+      "Completed Advance Diploma in Software Engineering with a strong focus on software engineering, data structures, and web technologies.",
+  },
+  {
+    degree: "MERN Stack Development",
+    institution: "Self-Directed & Online Platforms",
+    year: "2020 – 2024",
+    description:
+      "Continuously through platforms like Udemy, YouTube, and official documentation. Completed specializations in React, Node.js, Next.js, and cloud deployment — applying every concept directly to real client projects.",
+  },
+  {
+    degree: "Intermediate",
+    institution: "Government National College Karachi",
+    year: "2019 – 2021",
+    description:
+      "Completed intermediate education with a focus on pre-engineering subjects, building a strong foundation in mathematics, physics, and chemistry.",
+  },
+  {
+    degree: "Matriculation",
+    institution: "Iqra Tarbiyat-ul-Atfal Secondary School",
+    year: "2017 – 2019",
+    description:
+      "Completed matriculation education with a focus on science subjects, building a strong foundation in mathematics, physics, and chemistry.",
   },
 ];
 

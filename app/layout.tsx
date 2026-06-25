@@ -150,6 +150,10 @@ const jsonLd = [
     sameAs: [
       "https://github.com/dev-ashir768",
       "https://www.linkedin.com/in/ashir-arif-642a72279/",
+      "https://twitter.com/ashirarif",
+      "https://dev.to/ashirarif",
+      "https://www.upwork.com/freelancers/ashirarif",
+      "https://www.fiverr.com/ashirarif",
     ],
     knowsAbout: [
       "React.js",
@@ -170,6 +174,16 @@ const jsonLd = [
       "OpenAI API",
       "LLM Integration",
     ],
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Federal Urdu University of Arts, Science and Technology",
+      url: "https://www.fuuast.edu.pk",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "PK",
+      addressRegion: "Pakistan",
+    },
     hasOccupation: {
       "@type": "Occupation",
       name: "MERN Stack & AI Automation Developer",
@@ -181,6 +195,13 @@ const jsonLd = [
       },
       skills:
         "Next.js, React.js, Node.js, MongoDB, TypeScript, n8n, Make, Zapier, OpenAI, Chatbots, Voice Agents",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "info.ashirarif@gmail.com",
+      contactType: "Freelance Inquiry",
+      areaServed: "Worldwide",
+      availableLanguage: ["English", "Urdu"],
     },
   },
   {

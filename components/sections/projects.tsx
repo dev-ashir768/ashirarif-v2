@@ -112,8 +112,10 @@ export function Projects() {
                       href={project.link}
                       className="p-1.5 bg-black/5 dark:bg-white/10 rounded-full hover:bg-primary hover:text-white transition-colors shrink-0 mt-0.5"
                       target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} live`}
                     >
-                      <ArrowUpRight className="w-4 h-4" />
+                      <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
                     </Link>
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed flex-1 mt-2.5">

@@ -331,6 +331,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link
+          rel="preload"
+          href="/branding/logo.png"
+          as="image"
+          type="image/png"
+        />
         {jsonLd.map((schema, i) => (
           <script
             key={i}

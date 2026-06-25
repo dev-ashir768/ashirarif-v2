@@ -147,6 +147,11 @@
   .animate-blob {
     animation: blob 8s infinite ease-in-out;
   }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-blob {
+      animation: none;
+    }
+  }
   .animation-delay-2000 {
     animation-delay: 2s;
   }

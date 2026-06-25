@@ -134,6 +134,8 @@ export function Skills() {
             variants={item}
             whileHover={{ y: -4, scale: 1.04 }}
             className="group relative h-[88px] md:h-24 rounded-xl glass-card flex flex-col items-center justify-center gap-1.5 overflow-hidden cursor-pointer"
+            role="img"
+            aria-label={skill.name}
           >
             {/* Hover glow */}
             <div
@@ -153,10 +155,12 @@ export function Skills() {
             <skill.icon
               className="w-7 h-7 md:w-8 md:h-8 transition-transform duration-300 group-hover:scale-110 dark:hidden"
               style={{ color: skill.color }}
+              aria-hidden="true"
             />
             <skill.icon
               className="w-7 h-7 md:w-8 md:h-8 transition-transform duration-300 group-hover:scale-110 hidden dark:block"
               style={{ color: skill.darkColor }}
+              aria-hidden="true"
             />
 
             <span className="font-semibold text-[10px] md:text-xs text-muted-foreground group-hover:text-foreground transition-colors text-center px-1 leading-tight">

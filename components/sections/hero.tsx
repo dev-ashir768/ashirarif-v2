@@ -27,10 +27,12 @@ export function Hero() {
           <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden ring-2 ring-primary/30 shadow-[0_0_40px_rgba(121,40,202,0.4)]">
             <Image
               src="/branding/logo.png"
-              alt="Ashir Arif Logo"
+              alt="Ashir Arif — AI Automation Developer"
               fill
               className="object-cover mix-blend-screen"
               priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 80px, 96px"
             />
           </div>
         </motion.div>

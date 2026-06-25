@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Ashir Arif Portfolio",
+    siteName: "Ashir Arif",
     title: siteTitle,
     description: siteDescription,
     images: [
@@ -215,7 +215,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Ashir Arif Portfolio",
+    name: "Ashir Arif",
+    alternateName: "Ashir Arif Portfolio",
     url: siteUrl,
     description: siteDescription,
     author: {

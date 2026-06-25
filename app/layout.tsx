@@ -345,6 +345,13 @@ export default function RootLayout({
           />
         ))}
       </head>
+      {/* Google AdSense */}
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6364311626236730"
+        crossOrigin="anonymous"
+        strategy="lazyOnload"
+      />
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
         strategy="afterInteractive"

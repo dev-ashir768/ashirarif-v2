@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 // --- Email Templates ---
 
@@ -257,35 +257,25 @@ export async function POST(req: Request) {
       );
     }
 
-    // Configure Nodemailer transporter
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "Ashir Arif <onboarding@resend.dev>";
+    const adminEmail = process.env.ADMIN_EMAIL || "info.ashirarif@gmail.com";
 
-    const adminEmailPromise = transporter.sendMail({
-      from: `"${name}" <${process.env.SMTP_USER}>`,
-      to: process.env.ADMIN_EMAIL,
-      subject: `New Lead: ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      html: generateAdminEmail(name, email, message),
-    });
-
-    const userEmailPromise = transporter.sendMail({
-      from: `"Ashir Arif" <${process.env.SMTP_USER}>`,
-      to: email,
-      subject: "Thank you for getting in touch",
-      text: `Hi ${name},\n\nThanks for reaching out! I've received your message and will get back to you soon.\n\nBest,\nAshir`,
-      html: generateUserEmail(name),
-    });
-
-    // Send both emails in parallel
-    await Promise.allSettled([adminEmailPromise, userEmailPromise]);
+    await Promise.allSettled([
+      resend.emails.send({
+        from: fromEmail,
+        to: adminEmail,
+        replyTo: email,
+        subject: `New Lead: ${name}`,
+        html: generateAdminEmail(name, email, message),
+      }),
+      resend.emails.send({
+        from: fromEmail,
+        to: email,
+        subject: "Thank you for getting in touch",
+        html: generateUserEmail(name),
+      }),
+    ]);
 
     return NextResponse.json(
       { message: "Emails sent successfully" },

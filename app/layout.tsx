@@ -123,6 +123,10 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 
   category: "technology",
+
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
 };
 
 const jsonLd = [

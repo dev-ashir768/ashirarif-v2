@@ -136,15 +136,26 @@ export const metadata: Metadata = {
 const jsonLd = [
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home",       item: siteUrl },
-      { "@type": "ListItem", position: 2, name: "About",      item: `${siteUrl}/#about` },
-      { "@type": "ListItem", position: 3, name: "Skills",     item: `${siteUrl}/#skills` },
-      { "@type": "ListItem", position: 4, name: "Experience", item: `${siteUrl}/#experience` },
-      { "@type": "ListItem", position: 5, name: "Projects",   item: `${siteUrl}/#projects` },
-      { "@type": "ListItem", position: 6, name: "Contact",    item: `${siteUrl}/#contact` },
-    ],
+    "@type": "ProfilePage",
+    dateCreated: "2024-01-01",
+    dateModified: "2026-07-16",
+    url: siteUrl,
+    name: "Ashir Arif — AI Automation Developer",
+    description: siteDescription,
+    mainEntity: {
+      "@type": "Person",
+      name: "Ashir Arif",
+      url: siteUrl,
+      jobTitle: "AI Automation Developer",
+      sameAs: [
+        "https://github.com/dev-ashir768",
+        "https://www.linkedin.com/in/ashir-arif-642a72279/",
+        "https://twitter.com/ashirarif",
+        "https://dev.to/ashirarif",
+        "https://www.upwork.com/freelancers/ashirarif",
+        "https://www.fiverr.com/ashirarif",
+      ],
+    },
   },
   {
     "@context": "https://schema.org",
@@ -154,7 +165,7 @@ const jsonLd = [
     email: "info.ashirarif@gmail.com",
     jobTitle: "MERN Stack & AI Automation Developer",
     description: siteDescription,
-    image: `${siteUrl}/og-image.png`,
+    image: `${siteUrl}/branding/logo.png`,
     sameAs: [
       "https://github.com/dev-ashir768",
       "https://www.linkedin.com/in/ashir-arif-642a72279/",
@@ -207,6 +218,7 @@ const jsonLd = [
     contactPoint: {
       "@type": "ContactPoint",
       email: "info.ashirarif@gmail.com",
+      telephone: "+923161065268",
       contactType: "Freelance Inquiry",
       areaServed: "Worldwide",
       availableLanguage: ["English", "Urdu"],
@@ -274,6 +286,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Service",
     name: "AI Automation & MERN Stack Development Services",
+    url: siteUrl,
     provider: {
       "@type": "Person",
       name: "Ashir Arif",

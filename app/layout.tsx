@@ -27,9 +27,9 @@ const jakarta = Plus_Jakarta_Sans({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ashirarif.com";
 const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-D1FG03CXMR";
-const siteTitle = "Ashir Arif | AI Automation Developer — Chatbots, Voice Agents & Workflow Automation";
+const siteTitle = "Ashir Arif | AI Automation Developer & MERN Stack Expert";
 const siteDescription =
-  "Hire Ashir Arif — AI Automation Developer & MERN Stack Expert. I build AI chatbots, voice agents, and workflow automations using n8n, Make, Zapier, and OpenAI. Available for freelance projects worldwide.";
+  "Hire Ashir Arif — AI Automation Developer specializing in chatbots, voice agents, and n8n/Make workflow automation. Available for freelance projects worldwide.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
